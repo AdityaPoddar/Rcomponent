@@ -131,8 +131,8 @@ namespace GPL_APP
             canvass.DrawCursor(Graphics.FromImage(temp_screen));
 
 
-            if (canvass.fill) fillcolor_label.Text = "Fill : ✔ / Color : " + canvass.colour.Name;
-            else fillcolor_label.Text = "Fill : ❌ / Color : " + canvass.colour.Name;
+            if (canvass.fill) fillcolor_label.Text = "Fill : ON  Color : " + canvass.colour.Name;
+            else fillcolor_label.Text = "Fill : OFF  Color : " + canvass.colour.Name;
 
             //if syntaxcheck is on draw nothing
             if(!parser.checksyntax)

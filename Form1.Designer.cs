@@ -185,7 +185,7 @@
             this.fillcolor_label.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
             this.fillcolor_label.Size = new System.Drawing.Size(254, 51);
             this.fillcolor_label.TabIndex = 10;
-            this.fillcolor_label.Text = "Fill : ❌ / Color : Black";
+            this.fillcolor_label.Text = "Fill : OFF  Color : ";
             this.fillcolor_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_run
