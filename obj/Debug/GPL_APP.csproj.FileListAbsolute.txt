@@ -1,0 +1,29 @@
+E:\lvl6\software projects\gpl-project\GPL_APP\GPL_APP\bin\Debug\GPL_APP.exe.config
+E:\lvl6\software projects\gpl-project\GPL_APP\GPL_APP\bin\Debug\GPL_APP.exe
+E:\lvl6\software projects\gpl-project\GPL_APP\GPL_APP\bin\Debug\GPL_APP.pdb
+E:\lvl6\software projects\gpl-project\GPL_APP\GPL_APP\obj\Debug\GPL_APP.csprojAssemblyReference.cache
+E:\lvl6\software projects\gpl-project\GPL_APP\GPL_APP\obj\Debug\GPL_APP.Properties.Resources.resources
+E:\lvl6\software projects\gpl-project\GPL_APP\GPL_APP\obj\Debug\GPL_APP.csproj.GenerateResource.cache
+E:\lvl6\software projects\gpl-project\GPL_APP\GPL_APP\obj\Debug\GPL_APP.csproj.CoreCompileInputs.cache
+E:\lvl6\software projects\gpl-project\GPL_APP\GPL_APP\obj\Debug\GPL_APP.exe
+E:\lvl6\software projects\gpl-project\GPL_APP\GPL_APP\obj\Debug\GPL_APP.pdb
+E:\lvl6\software projects\gpl-project - Copy\GPL_APP\GPL_APP\bin\Debug\GPL_APP.exe.config
+E:\lvl6\software projects\gpl-project - Copy\GPL_APP\GPL_APP\bin\Debug\GPL_APP.exe
+E:\lvl6\software projects\gpl-project - Copy\GPL_APP\GPL_APP\bin\Debug\GPL_APP.pdb
+E:\lvl6\software projects\gpl-project - Copy\GPL_APP\GPL_APP\obj\Debug\GPL_APP.csprojAssemblyReference.cache
+E:\lvl6\software projects\gpl-project - Copy\GPL_APP\GPL_APP\obj\Debug\GPL_APP.Properties.Resources.resources
+E:\lvl6\software projects\gpl-project - Copy\GPL_APP\GPL_APP\obj\Debug\GPL_APP.csproj.GenerateResource.cache
+E:\lvl6\software projects\gpl-project - Copy\GPL_APP\GPL_APP\obj\Debug\GPL_APP.csproj.CoreCompileInputs.cache
+E:\lvl6\software projects\gpl-project - Copy\GPL_APP\GPL_APP\obj\Debug\GPL_APP.exe
+E:\lvl6\software projects\gpl-project - Copy\GPL_APP\GPL_APP\obj\Debug\GPL_APP.pdb
+E:\lvl6\software projects\gpl-project - Copy\GPL_APP\GPL_APP\obj\Debug\GPL_APP.GplApplication.resources
+E:\lvl6\software projects\gpl-project\GPL_APP\GPL_APP\obj\Debug\GPL_APP.GplApplication.resources
+E:\lvl6\software projects\gpl-project\GPL_APP\GPL_APP\bin\Debug\GPL_APP.xml
+C:\Users\User\source\repos\gpl-project\GPL_APP\GPL_APP\obj\Debug\GPL_APP.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\gpl-project\GPL_APP\GPL_APP\obj\Debug\GPL_APP.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\source\repos\gpl-project\GPL_APP\GPL_APP\obj\Debug\GPL_APP.GplApplication.resources
+C:\Users\User\source\repos\gpl-project\GPL_APP\GPL_APP\obj\Debug\GPL_APP.Properties.Resources.resources
+C:\Users\User\source\repos\gpl-project\GPL_APP\GPL_APP\obj\Debug\GPL_APP.csproj.GenerateResource.cache
+C:\Users\User\source\repos\gpl-project\GPL_APP\GPL_APP\obj\Debug\GPL_APP.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\gpl-project\GPL_APP\GPL_APP\obj\Debug\GPL_APP.exe
+C:\Users\User\source\repos\gpl-project\GPL_APP\GPL_APP\obj\Debug\GPL_APP.pdb

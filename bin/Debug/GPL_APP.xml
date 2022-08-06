@@ -1,0 +1,750 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GPL_APP</name>
+    </assembly>
+    <members>
+        <member name="T:GPL_APP.Canvas">
+            <summary>
+            Stores graphics, pen, cursor position and performs clearing and reseting.
+            </summary>
+        </member>
+        <member name="T:GPL_APP.Canvas.RefereshDisplayDelegate">
+            <summary>
+            Delegate for providing reference to the picture box.
+            </summary>
+        </member>
+        <member name="T:GPL_APP.Canvas.RunBtnDelegate">
+            <summary>
+            Delegate for providing reference to the run button.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="T:GPL_APP.Canvas.TextAreaDelegate">
+            <summary>
+            Delegate for providing reference to the textarea 
+            </summary>
+            <param name="text"></param>
+        </member>
+        <member name="F:GPL_APP.Canvas.g">
+            <summary>
+            Graphics for drawing shapes and lines
+            </summary>
+        </member>
+        <member name="F:GPL_APP.Canvas.Brush">
+            <summary>
+            Brush for fill up the shapes
+            </summary>
+        </member>
+        <member name="F:GPL_APP.Canvas.xPos">
+            <summary>
+            Position where shapes are drawn from
+            </summary>
+        </member>
+        <member name="F:GPL_APP.Canvas.yPos">
+            <summary>
+            Position where shapes are drawn from
+            </summary>
+        </member>
+        <member name="F:GPL_APP.Canvas.colour">
+            <summary>
+            Colors for individual shapes
+            </summary>
+        </member>
+        <member name="F:GPL_APP.Canvas.fill">
+            <summary>
+            Fill or no Fill
+            </summary>
+        </member>
+        <member name="F:GPL_APP.Canvas.run">
+            <summary>
+            For running the program
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Canvas.#ctor(System.Drawing.Graphics,System.Windows.Forms.PictureBox)">
+            <summary>
+            Initializes all the instance variable
+            </summary>
+            <param name="g">Graphic object of a bitmap where shapes are drawn.</param>
+        </member>
+        <member name="M:GPL_APP.Canvas.InvokeDelegate">
+            Setting up delegates
+        </member>
+        <member name="M:GPL_APP.Canvas.InvokeConsoleDelegate(System.Text.StringBuilder)">
+            <summary>
+            Invokes the console textarea.
+            </summary>
+            <param name="text"></param>
+        </member>
+        <member name="M:GPL_APP.Canvas.InvokeBtnDelegate(System.Boolean)">
+            <summary>
+            Invokes the Run button
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:GPL_APP.Canvas.SetBrushAndPenColor(System.String)">
+            Setting up threads and Delegates Completed
+            <summary>
+            
+            </summary>
+            <param name="colorName"></param>
+        </member>
+        <member name="M:GPL_APP.Canvas.DrawLine(System.Int32[])">
+            <summary>
+            Draw a straight line
+            </summary>
+            <param name="xy">Position where line needs to be drawn to</param>
+        </member>
+        <member name="M:GPL_APP.Canvas.ChangeCursorLocation(System.Int32[])">
+            <summary>
+            Changes the location of the cursor
+            </summary>
+            <param name="xy">Position where cursor needs to be moved.</param>
+        </member>
+        <member name="M:GPL_APP.Canvas.Clear">
+            <summary>
+            Clears all the drawing in the bitmap.
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Canvas.Reset">
+            <summary>
+            Resets all the textbox as well as colours, cursor, and errors.
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Canvas.DrawCursor(System.Drawing.Graphics)">
+            <summary>
+            Draws the cursor in the bitmap
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="T:GPL_APP.Circle">
+            <summary>
+            Class for making circles.
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Circle.set(System.Drawing.Color,System.Int32[])">
+            <summary>
+            Seter for the colours, size and positino of shape circle
+            </summary>
+            <param name="colour">Colour of the shape as an object of Color class</param>
+            <param name="list">Size and position of the shape</param>
+        </member>
+        <member name="M:GPL_APP.Circle.draw(System.Drawing.Graphics,System.Boolean)">
+            <summary>
+            Draw the shape
+            </summary>
+            <param name="g">Graphic object where it's drawn</param>
+            <param name="fill">Fill or no Fill for the shape</param>
+        </member>
+        <member name="T:GPL_APP.FileLoadAndWrite">
+            <summary>
+            Class for handling load and save feature.
+            </summary>
+        </member>
+        <member name="M:GPL_APP.FileLoadAndWrite.LoadFile">
+            <summary>
+            Opens the Loadfile dialogbox and loads the file
+            </summary>
+            <returns>File contents as an arraylist.</returns>
+        </member>
+        <member name="M:GPL_APP.FileLoadAndWrite.WriteFile(System.String)">
+            <summary>
+            Opens save dialog box and writes the content onto the file.
+            </summary>
+            <param name="text">String of content to be written on the file.</param>
+        </member>
+        <member name="T:GPL_APP.InvalidValueAssignException">
+            <summary>
+            Exception for invalid value assignment.
+            </summary>
+        </member>
+        <member name="M:GPL_APP.InvalidValueAssignException.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:GPL_APP.InvalidValueAssignException.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:GPL_APP.InvalidValueAssignException.#ctor(System.String,System.Exception)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+            <param name="inner"></param>
+        </member>
+        <member name="M:GPL_APP.InvalidValueAssignException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:GPL_APP.Iterator">
+            <summary>
+            Iterator for MethodCollection
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Iterator.#ctor(GPL_APP.MethodCollection)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="collection"></param>
+        </member>
+        <member name="M:GPL_APP.Iterator.First">
+            <summary>
+            Gets the first element
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GPL_APP.Iterator.Next">
+            <summary>
+            Gets the next element
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:GPL_APP.Iterator.Step">
+            <summary>
+            Steps to take
+            </summary>
+        </member>
+        <member name="T:GPL_APP.Methods">
+            <summary>
+            Stores all the methods 
+            </summary>
+        </member>
+        <member name="P:GPL_APP.Methods.methodName">
+            <summary>
+            Name of the method
+            </summary>
+        </member>
+        <member name="P:GPL_APP.Methods.parameters">
+            <summary>
+            Parameters to save from methods
+            </summary>
+        </member>
+        <member name="F:GPL_APP.Methods.content">
+            <summary>
+            Content of the method
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Methods.#ctor">
+            <summary>
+            Constructor initializes arraylist where content is stored.
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Methods.AddContent(System.String)">
+            <summary>
+            Content of the method is stored here.
+            </summary>
+            <param name="line"></param>
+        </member>
+        <member name="M:GPL_APP.Methods.Clear">
+            <summary>
+            Clears all the content inside the method.
+            </summary>
+        </member>
+        <member name="T:GPL_APP.Polygon">
+            <summary>
+            Class for handing rectangle shapes
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Polygon.#ctor">
+            <summary>
+            Constructor for initializing size
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Polygon.set(System.Drawing.Color,System.Int32[])">
+            <summary>
+            Sets the shape colour and position of the rectangle,
+            </summary>
+            <param name="colour">Colour as object of Color class.</param>
+            <param name="list">Array of int for determining position and shapes,</param>
+        </member>
+        <member name="M:GPL_APP.Polygon.draw(System.Drawing.Graphics,System.Boolean)">
+            <summary>
+            Draw the shape
+            </summary>
+            <param name="g">Graphic object where it's drawn</param>
+            <param name="fill">Fill or no Fill for the shape</param>
+        </member>
+        <member name="T:GPL_APP.Syntax">
+            <summary>
+            Checks syntax and stores variables and methods.
+            </summary>
+        </member>
+        <member name="F:GPL_APP.Syntax.variables">
+            <summary>
+            Variables are stores here.
+            </summary>
+        </member>
+        <member name="F:GPL_APP.Syntax.methods">
+            <summary>
+            Methods are stored here.
+            </summary>
+        </member>
+        <member name="F:GPL_APP.Syntax.iterator">
+            <summary>
+            Referece for itereator object.
+            </summary>
+        </member>
+        <member name="F:GPL_APP.Syntax.dt">
+            <summary>
+            Reference for Datatable object.
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Syntax.#ctor">
+            <summary>
+            Constructor for initializing vairables methods and datatable.
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Syntax.FindWord(System.String,System.String)">
+            <summary>
+            Find the given word in given line.
+            </summary>
+            <param name="line">Line which is to be check</param>
+            <param name="word">Word which is to be found.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GPL_APP.Syntax.VarSyntaxCheck(System.String)">
+            <summary>
+            If a line contains any variable declaration or variable reassignment this method is called.
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GPL_APP.Syntax.VarToValue(System.String)">
+            <summary>
+            Check if the line contains any vairable stores and parse it for the value of the variable.
+            </summary>
+            <param name="line"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GPL_APP.Syntax.CheckCondition(System.String)">
+            VARIABLE PARSING ENDS
+            IF AND WHILE PARSING STARTS
+        </member>
+        <member name="M:GPL_APP.Syntax.WhileIfSyntaxCheck(System.String[],System.String[])">
+            <summary>
+            Save the offset of all the if and while found.
+            </summary>
+            <param name="cmd"></param>
+            <param name="endpoint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GPL_APP.Syntax.ParseMethod(System.String,GPL_APP.Methods)">
+            <summary>
+            Check the line for method declaration and store the method in method collection.
+            </summary>
+            <param name="line"></param>
+            <param name="method"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GPL_APP.Syntax.CheckForMethod(System.String)">
+            <summary>
+            Check if the line contains the name of the method already stored.
+            </summary>
+            <param name="line"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GPL_APP.Syntax.ParseMethodParameter(System.String)">
+            <summary>
+            Parse the parameter of the 
+            </summary>
+            <param name="cmd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GPL_APP.Triangle.set(System.Drawing.Color,System.Int32[])">
+            <summary>
+            Seter for the colours, size and positino of shape triangle
+            </summary>
+            <param name="colour">Colour of the shape as an object of Color class</param>
+            <param name="list">Size and position of the shape</param>
+        </member>
+        <member name="M:GPL_APP.Triangle.draw(System.Drawing.Graphics,System.Boolean)">
+            <summary>
+            Draw the shape
+            </summary>
+            <param name="g">Graphic object where it's drawn</param>
+            <param name="fill">Fill or no Fill for the shape</param>
+        </member>
+        <member name="T:GPL_APP.Square">
+            <summary>
+            Class for making square shapes.
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Square.#ctor(System.Drawing.Color,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Initializes Positions and colour of the instance variables.
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Square.set(System.Drawing.Color,System.Int32[])">
+            <summary>
+            Seter for the colours, size and positino of shape
+            </summary>
+            <param name="colour">Colour of the shape as an object of Color class</param>
+            <param name="list">Size and position of the shape</param>
+        </member>
+        <member name="M:GPL_APP.Square.draw(System.Drawing.Graphics,System.Boolean)">
+            <summary>
+            Draw the shape
+            </summary>
+            <param name="g">Graphic object where it's drawn</param>
+            <param name="fill">Fill or no Fill for the shape</param>
+        </member>
+        <member name="T:GPL_APP.ShapeFactory">
+            <summary>
+            Factory class for making all the shapes.
+            </summary>
+        </member>
+        <member name="M:GPL_APP.ShapeFactory.getShape(System.String)">
+            <summary>
+            Returns the required shape with name of the shape as a string.
+            </summary>
+            <param name="shapeType">Name of the shape as a string.</param>
+            <returns></returns>
+        </member>
+        <member name="T:GPL_APP.Rectangle">
+            <summary>
+            Class for handing rectangle shapes
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Rectangle.#ctor">
+            <summary>
+            Constructor for initializing size
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Rectangle.set(System.Drawing.Color,System.Int32[])">
+            <summary>
+            Sets the shape colour and position of the rectangle,
+            </summary>
+            <param name="colour">Colour as object of Color class.</param>
+            <param name="list">Array of int for determining position and shapes,</param>
+        </member>
+        <member name="M:GPL_APP.Rectangle.draw(System.Drawing.Graphics,System.Boolean)">
+            <summary>
+            Draw the shape
+            </summary>
+            <param name="g">Graphic object where it's drawn</param>
+            <param name="fill">Fill or no Fill for the shape</param>
+        </member>
+        <member name="T:GPL_APP.Shapes">
+            <summary>
+            Interface for the all the shapes.
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Shapes.set(System.Drawing.Color,System.Int32[])">
+            <summary>
+            Seter for the colours, size and positino of shape
+            </summary>
+            <param name="colour">Colour of the shape</param>
+            <param name="list">Size and position of the shape</param>
+        </member>
+        <member name="M:GPL_APP.Shapes.setStartPoint(System.Int32[])">
+            <summary>
+            Set the starting position where it needs to be drawn from.
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="M:GPL_APP.Shapes.setColour(System.Drawing.Color)">
+            <summary>
+            Pen or brush colour used for drawing the shape
+            </summary>
+            <param name="colour"></param>
+        </member>
+        <member name="M:GPL_APP.Shapes.draw(System.Drawing.Graphics,System.Boolean)">
+            <summary>
+            Draw the shape
+            </summary>
+            <param name="g">Graphic object where it's drawn</param>
+            <param name="fill">Fill or no Fill for the shape</param>
+        </member>
+        <member name="T:GPL_APP.Shape">
+            <summary>
+            Contains basic attribute of all the different shapes.
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Shape.#ctor">
+            <summary>
+            Initializes Positions and colour of the instance variables.
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Shape.#ctor(System.Drawing.Color,System.Int32,System.Int32)">
+            <summary>
+            Sets the colour and positin of the instance vairable by overloading the constructor.
+            </summary>
+            <param name="colour"></param>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="M:GPL_APP.Shape.set(System.Drawing.Color,System.Int32[])">
+            <summary>
+            Seter for the colours, size and positino of shape
+            </summary>
+            <param name="colour">Colour of the shape as an object of Color class</param>
+            <param name="list">Size and position of the shape</param>
+        </member>
+        <member name="M:GPL_APP.Shape.setColour(System.Drawing.Color)">
+            <summary>
+            Setter for the colour instance variable.
+            </summary>
+            <param name="colour">Colour object used for coloring, made from Color class</param>
+        </member>
+        <member name="M:GPL_APP.Shape.setStartPoint(System.Int32[])">
+            <summary>
+            Set the starting position for the shape to be drawn from.
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="T:GPL_APP.Parse">
+            <summary>
+            Parseses the command passed as a text string in textbox or a file
+            </summary>
+        </member>
+        <member name="F:GPL_APP.Parse.canvas">
+            <summary>
+            Canvas object for handling pen, colour and position
+            </summary>
+        </member>
+        <member name="F:GPL_APP.Parse.factory">
+            <summary>
+            For creating shapes 
+            </summary>
+        </member>
+        <member name="F:GPL_APP.Parse.shape">
+            <summary>
+            Stores individual shapes
+            </summary>
+        </member>
+        <member name="F:GPL_APP.Parse.lineoffset">
+            <summary>
+            Stores Index of the line.
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Parse.#ctor(GPL_APP.Canvas)">
+            <summary>
+            
+            </summary>
+            <param name="canvas"></param>
+        </member>
+        <member name="M:GPL_APP.Parse.DrawFromLine(System.String,System.Int32)">
+            <summary>
+            Draws from s single line command passed as a string.
+            </summary>
+            <param name="line">String of cmd to be parsed</param>
+            <param name="resetall">Reset menuitem for reseting fields.</param>
+            <param name="lineoffset">Offset of every line</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:GPL_APP.Parse.DrawFromText(System.String)">
+            <summary>
+            Parses the Multiline command passed as a text.
+            </summary>
+            <param name="text">Multiline text command stored as a string</param>
+            <param name="resetall">Multiline text command stored as a string</param>
+        </member>
+        <member name="M:GPL_APP.Parse.StringToInt(System.String[])">
+            <summary>
+            Converts array of string to an array of int.
+            </summary>
+            <param name="str">Array of string</param>
+            <returns>Array of integers</returns>
+        </member>
+        <member name="M:GPL_APP.Parse.SyntaxParser(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="cmd"></param>
+            <param name="resetall"></param>
+        </member>
+        <member name="T:GPL_APP.Compile">
+            <summary>
+            Compiles the command before it is parsed in the parser.
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Compile.#ctor">
+            <summary>
+            Initialized intance variable errors to an arraylist.
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Compile.TrimLower(System.String)">
+            <summary>
+            Trims and Lowers the given string
+            </summary>
+            <param name="line">String to be lowered and trimed.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GPL_APP.Compile.LineParser(System.String)">
+            <summary>
+            Parses the line into cmd and parameter.
+            </summary>
+            <param name="line">String as a command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GPL_APP.Compile.TextParser(System.String)">
+            <summary>
+            Parses the multiline command into single line command.
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GPL_APP.Compile.getErrors">
+            <summary>
+            count and track the errors
+            </summary>
+        </member>
+        <member name="T:GPL_APP.GplApplication">
+            <summary>
+            Contains objects of all the components of the form
+            </summary>
+        </member>
+        <member name="F:GPL_APP.GplApplication.temp_screen">
+            <summary>
+            Temp screen for drawing cursor.
+            </summary>
+        </member>
+        <member name="F:GPL_APP.GplApplication.parser">
+            <summary>
+            Parses the command provided.
+            </summary>
+        </member>
+        <member name="F:GPL_APP.GplApplication.filecontent">
+            <summary>
+            Stores content of the file loaded.
+            </summary>
+        </member>
+        <member name="M:GPL_APP.GplApplication.#ctor">
+            <summary>
+            Constructor to initialize the form.
+            </summary>
+        </member>
+        <member name="M:GPL_APP.GplApplication.cmdLine_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Event to handle line witten in the cmdLine textbox.
+            </summary>
+            <param name="sender">Reference to the object that send the event.</param>
+            <param name="e">Event data from the event. </param>
+        </member>
+        <member name="M:GPL_APP.GplApplication.textCompile(System.Object,System.EventArgs)">
+            <summary>
+            Compiles the text in Multiline command textbox
+            </summary>
+            <param name="sender">Reference to the object that send the event.</param>
+            <param name="e">Event data from the event. </param>
+        </member>
+        <member name="M:GPL_APP.GplApplication.displayWindow_Paint(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Paint event for rendering shapes in the displayWindow Bitmap.
+            </summary>
+            <param name="sender">Reference to the object that send the event.</param>
+            <param name="e">Event data from the event. </param>
+        </member>
+        <member name="M:GPL_APP.GplApplication.loadFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            Event for handling click in the load submenu item. 
+            </summary>
+            <param name="sender">Reference to the object that send the event.</param>
+            <param name="e">Event data from the event. </param>
+        </member>
+        <member name="M:GPL_APP.GplApplication.MenuClearClick(System.Object,System.EventArgs)">
+            <summary>
+            Handles event for click in clear submenu item.
+            </summary>
+            <param name="sender">Reference to the object that send the event.</param>
+            <param name="e">Event data from the event. </param>
+        </member>
+        <member name="M:GPL_APP.GplApplication.MenuResetClick(System.Object,System.EventArgs)">
+            <summary>
+            Handles event for click in reset submenu item.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GPL_APP.GplApplication.SaveToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Event handling for click in the save submenu item.
+            </summary>
+            <param name="sender">Reference to the object that send the event.</param>
+            <param name="e">Event data from the event. </param>
+        </member>
+        <member name="F:GPL_APP.GplApplication.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:GPL_APP.GplApplication.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:GPL_APP.GplApplication.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:GPL_APP.Program">
+            <summary>
+            Driver class for the form application
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="F:GPL_APP.Variable.value">
+             <summary>
+            
+             </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Variable.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:GPL_APP.Variable.Value">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:GPL_APP.Variable.Execute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:GPL_APP.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:GPL_APP.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:GPL_APP.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:GPL_APP.Properties.Resources.icon_exit">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:GPL_APP.Properties.Resources.icon_load">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>
