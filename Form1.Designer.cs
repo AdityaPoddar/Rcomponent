@@ -64,11 +64,11 @@
             this.console.BackColor = System.Drawing.Color.Black;
             this.console.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.console.ForeColor = System.Drawing.Color.LimeGreen;
-            this.console.Location = new System.Drawing.Point(11, 437);
+            this.console.Location = new System.Drawing.Point(12, 469);
             this.console.Multiline = true;
             this.console.Name = "console";
             this.console.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.console.Size = new System.Drawing.Size(548, 65);
+            this.console.Size = new System.Drawing.Size(551, 65);
             this.console.TabIndex = 6;
             // 
             // menuBar
@@ -159,9 +159,9 @@
             this.error_label.Location = new System.Drawing.Point(12, 414);
             this.error_label.Name = "error_label";
             this.error_label.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
-            this.error_label.Size = new System.Drawing.Size(547, 20);
+            this.error_label.Size = new System.Drawing.Size(547, 52);
             this.error_label.TabIndex = 8;
-            this.error_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.error_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // cmdText
             // 
@@ -179,13 +179,14 @@
             this.fillcolor_label.BackColor = System.Drawing.Color.MistyRose;
             this.fillcolor_label.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fillcolor_label.ForeColor = System.Drawing.Color.Black;
-            this.fillcolor_label.Location = new System.Drawing.Point(321, 415);
+            this.fillcolor_label.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.fillcolor_label.Location = new System.Drawing.Point(305, 414);
             this.fillcolor_label.Name = "fillcolor_label";
             this.fillcolor_label.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
-            this.fillcolor_label.Size = new System.Drawing.Size(238, 21);
+            this.fillcolor_label.Size = new System.Drawing.Size(254, 51);
             this.fillcolor_label.TabIndex = 10;
             this.fillcolor_label.Text = "Fill : ❌ / Color : Black";
-            this.fillcolor_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.fillcolor_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_run
             // 
