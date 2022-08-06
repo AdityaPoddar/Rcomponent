@@ -53,7 +53,7 @@
             this.cmdLine.BackColor = System.Drawing.Color.LightGray;
             this.cmdLine.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.cmdLine.ForeColor = System.Drawing.Color.Lime;
-            this.cmdLine.Location = new System.Drawing.Point(575, 472);
+            this.cmdLine.Location = new System.Drawing.Point(575, 504);
             this.cmdLine.Name = "cmdLine";
             this.cmdLine.Size = new System.Drawing.Size(180, 30);
             this.cmdLine.TabIndex = 1;
@@ -170,7 +170,7 @@
             this.cmdText.ForeColor = System.Drawing.Color.Black;
             this.cmdText.Location = new System.Drawing.Point(575, 42);
             this.cmdText.Name = "cmdText";
-            this.cmdText.Size = new System.Drawing.Size(251, 424);
+            this.cmdText.Size = new System.Drawing.Size(251, 446);
             this.cmdText.TabIndex = 9;
             this.cmdText.Text = "";
             // 
@@ -195,9 +195,9 @@
             this.btn_run.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_run.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_run.ForeColor = System.Drawing.Color.Black;
-            this.btn_run.Location = new System.Drawing.Point(761, 472);
+            this.btn_run.Location = new System.Drawing.Point(761, 504);
             this.btn_run.Name = "btn_run";
-            this.btn_run.Size = new System.Drawing.Size(65, 26);
+            this.btn_run.Size = new System.Drawing.Size(65, 30);
             this.btn_run.TabIndex = 3;
             this.btn_run.Text = "Run";
             this.btn_run.UseVisualStyleBackColor = false;

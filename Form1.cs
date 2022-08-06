@@ -74,13 +74,13 @@ namespace GPL_APP
                 }
                 catch(InvalidCommandException a)
                 {
-                    parser.errors.Add("The command given is invalid. \r\n");
+                    parser.errors.Add("The command  invalid. \r\n");
                     Console.WriteLine(a);
                 }
                 catch(InvalidParameterException a)
                 {
 
-                    parser.errors.Add("The parameter given for the command is invalid. \r\n");
+                    parser.errors.Add("The parameter  invalid. \r\n");
                     Console.WriteLine(a);
 
                 }
